@@ -15,6 +15,7 @@ jobs:
           - v1-dependencies-{{ checksum "requirements.txt" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
+            
       - run:
           name: install dependencies
           command: |
@@ -23,7 +24,8 @@ jobs:
           make install
          #Install hadolint
           wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-              chmod +x /bin/hadolint
+          chmod +x /bin/hadolint
+          pylint --version
 
         - save_cache:
           paths:
