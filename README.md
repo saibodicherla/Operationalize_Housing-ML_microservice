@@ -1,6 +1,6 @@
-# Operationalize a Machine Learning Microservice API 
+# :building_construction: Operationalize a Machine Learning Microservice API
 
-:building_construction: Build [![CircleCI](https://circleci.com/gh/saibodicherla/Operationalize_Housing-ML_microservice.svg?style=svg)](https://circleci.com/gh/saibodicherla/Operationalize_Housing-ML_microservice)
+[![CircleCI](https://circleci.com/gh/saibodicherla/Operationalize_Housing-ML_microservice.svg?style=svg)](https://circleci.com/gh/saibodicherla/Operationalize_Housing-ML_microservice)
 
 
 ##  Project Description
