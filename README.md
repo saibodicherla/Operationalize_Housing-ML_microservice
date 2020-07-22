@@ -1,34 +1,46 @@
-<include a CircleCI status badge, here>
+# Operationalize a Machine Learning Microservice API 
 
-## Project Overview
+:building_construction: Build [![CircleCI](https://circleci.com/gh/saibodicherla/Operationalize_Housing-ML_microservice.svg?style=svg)](https://circleci.com/gh/saibodicherla/Operationalize_Housing-ML_microservice)
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+##  Project Description
 
-### Project Tasks
+This project encloses an operationalized Machine Learning Microservice API, a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston. According to several features, such as average rooms in a home & data about highway access, teacher-to-pupil ratios, etc. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). 
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
+This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling. 
+
+
+### Requirements 📝
+
+The objective of project is to prepare the machine learning microservice using:-
+
 * Test your project code using linting
-* Complete a Dockerfile to containerize this application
+* Create and Run Docker container
 * Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
+* Improve the predicition log statements in the source code for this application
 * Configure Kubernetes and create a Kubernetes cluster
 * Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
+* Integrated a Github repo with CircleCI to perform linting & indicate that your code has been tested.
+  
+## Setup the Environment ⚙️
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
+In order to run this project, you need to have Python3, Docker & Kubernetes installed on MacOs/Linux OS.
 
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
+1. Clone the repo on your local machine:
 
----
+```bash
+> https://github.com/saibodicherla/Operationalize_Housing-ML_microservice.git
+```
 
-## Setup the Environment
+ 2.  Navigate into the folder and Create a virtualenv and activate it
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+```bash
+>python -m venv .venv
+>source .venv/bin/activate
+```
+3. Run `make install` to install the necessary dependencies
 
-### Running `app.py`
+### Running `app.py` :arrow_down:
 
 1. Standalone:  `python app.py`
 2. Run in Docker:  `./run_docker.sh`
